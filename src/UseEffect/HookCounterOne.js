@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-
+import "../../src/styles.css";
 function HookCounterOne() {
   const [count, setCount] = useState(0);
 
@@ -9,7 +9,9 @@ function HookCounterOne() {
 
   return (
     <div>
-      <button onClick={() => setCount(count + 1)}>Click {count}</button>
+      <button className="button-counter" onClick={() => setCount(count + 1)}>
+        Click {count}
+      </button>
     </div>
   );
 }
